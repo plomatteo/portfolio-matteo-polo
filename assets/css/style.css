@@ -6,28 +6,21 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     color:white;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+/* UTILITIES */
+a {
+    text-decoration: none;
+   }
+li {
+    list-style: none;
+   }
 h1, h2, h3, h4, h5{
     color:black;
     text-align: center;
 }
-
-/* UTILITIES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   }
-   body {
-    font-family: cursive;
-   }
-   a {
-    text-decoration: none;
-   }
-   li {
-    list-style: none;
-   }
 
 /*****************INIZIO HEADER********************/
 /* NAVBAR STYLING STARTS */
@@ -181,6 +174,117 @@ i {
 .whitey {
     color: white;
 }
+
+form {
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.half {
+    width: 49.5%;
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+.full {
+    width: 100%;
+    font-size: 1.4rem;
+    color: black;
+    margin-bottom: 4px;
+}
+
+#campomail {
+    height: 150px;
+}
+
+/**********INIZIO FORM CONTATTI*********************/
+
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: black;
+    background-color: yellowgreen;
+  }
+  
+  .container * {
+    box-sizing: border-box;
+  }
+  
+  .flex-outer,
+  .flex-inner {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .flex-outer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .flex-outer li,
+  .flex-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .flex-inner {
+    padding: 0 8px;
+    justify-content: space-between;  
+  }
+  
+  .flex-outer > li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .flex-outer li label,
+  .flex-outer li p {
+    padding: 8px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: black;
+    
+  }
+  
+  .flex-outer > li > label,
+  .flex-outer li p {
+    flex: 1 0 120px;
+    max-width: 220px;
+  }
+  
+  .flex-outer > li > label + *,
+  .flex-inner {
+    flex: 1 0 220px;
+  }
+  
+  .flex-outer li p {
+    margin: 0;
+  }
+  
+  .flex-outer li input:not([type='checkbox']),
+  .flex-outer li textarea {
+    padding: 15px;
+    border: none;
+    font-family: 'Questrial', sans-serif;
+  }
+  
+  .flex-outer li button {
+    margin-left: auto;
+    padding: 8px 16px;
+    border: none;
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+  
+  .flex-inner li {
+    width: 100px;
+  }
+
 /**********ANIMAZIONE OVERLAY IMMAGINE************/
 #profileimg {
     display: block;
@@ -230,8 +334,6 @@ i {
 @media (min-width: 992px) {
     .col-33{
          width: 30%;
-         
-         
     }
     .col-66{
         width: 60%;
@@ -240,6 +342,16 @@ i {
         flex-direction: column;
         padding-top: 5%;
         padding-bottom: 5%;
+    }
+    .col-100{
+        width: 100%;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        align-items: center;
+
 
     }
 }
@@ -254,6 +366,16 @@ i {
          font-size: 1.6rem;
          padding-top: 5%;
          padding-bottom: 5%;
+    }
+    .col-100{
+        width: 100%;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        align-items: center;
+
     }
 }
 
@@ -312,4 +434,14 @@ i {
         padding: 5%;
         font-size: 1.4rem;
    }
+   .col-100{
+    width: 100%;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+
+}
 }

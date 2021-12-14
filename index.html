@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
         integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar">
         <!-- LOGO -->
-        <div class="logo"><img src="./src/logoMatteoPolo.png" alt=""></div>
+        <div class="logo"><img src="assets/img/logoMatteoPolo.png" alt=""></div>
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
             <!-- USING CHECKBOX HACK -->
@@ -82,7 +82,7 @@
                 recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
         </div>
         <div class="col-33">
-            <img src="./src/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
+            <img src="./assets/img/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
             <div class="overlay">
                 <div class="text">Hello, I'm Matteo</div>
             </div>
@@ -151,7 +151,7 @@
 
     <div class="grid reverse black" id="about">
         <div class="col-33">
-            <img src="./src/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
+            <img src="assets/img/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
             <div class="overlay">
                 <div class="text">Qualocosa riguardo la mia vita</div>
             </div>
@@ -169,21 +169,45 @@
     </div>
 
     <div class="grid white" id="contatti">
-        <div class="col-66">
-            <h1>CONTATTI </h1> <br>
-            <p class="blacktext" id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a type specimen book. It has survived not only
-                five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <div class="col-100">
+            <h1>PARLIAMOCI</h1> <br>
+            <p class="blacktext" id="corpotext">
+                Questa è la mia e-mail:<a class="blacky"href="mailto:matte.polo@gmail.com">matte.polo@gmail.com</a>
+            </p>
+            <br>
+            <p class="blacktext" id="corpotext">
+                Questa è il mio numero: <a class="blacky" href="tel:00393407382688"> Call me!</a>
+            </p>
         </div>
-        <div class="col-33">
-            <img src="./src/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
-            <div class="overlay">
-                <div class="text">I miei contatti</div>
-            </div>
-        </div>
+        <div class="container">
+            <form>
+              <ul class="flex-outer">
+                <li>
+                  <label for="first-name">Nome</label>
+                  <input type="text" id="first-name" placeholder="Inserisci il tuo nome qui">
+                </li>
+                <li>
+                  <label for="last-name">Cognome</label>
+                  <input type="text" id="last-name" placeholder="Inserisci il tuo conome qui">
+                </li>
+                <li>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" placeholder="Inserisci la tua mail qui">
+                </li>
+                <li>
+                  <label for="phone">Telefono</label>
+                  <input type="tel" id="phone" placeholder="Inserisci il tuo numero qui">
+                </li>
+                <li>
+                  <label for="message">Messaggio</label>
+                  <textarea rows="6" id="message" placeholder="Inserisci il tuo messaggio qui"></textarea>
+                </li>
+                <li>
+                  <button type="submit">Submit</button>
+                </li>
+              </ul>
+            </form>
+          </div>
     </div>
 
     <div class="grid reverse black" id="about">
