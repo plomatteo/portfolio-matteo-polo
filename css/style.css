@@ -1,0 +1,231 @@
+/*reset*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color:white;
+
+}
+
+
+h1, h2, h3, h4, h5{
+    color:black;
+    text-align: center;
+}
+
+
+/*****************INIZIO HEADER********************/
+.header {
+    background-color: black;
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    height: 230px;
+}
+.menu{
+
+    color: white;
+    display: flex;
+    margin-top: 30px;
+    float:right;
+    justify-content: space-around;
+}
+.menu li{
+    color: white;
+    display: block;
+    padding:2rem;
+    font-size: 1.5rem;
+}
+.menu>li:hover{
+    color: greenyellow;
+    font-size: 1.5rem;
+}
+a:hover{
+    color: greenyellow;
+}
+a{
+    text-decoration: none;
+}
+
+.dropdown{
+    color: white;
+    display: flex;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.dropdown-content>li{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 2px;
+}
+.dropdown-content>li:hover{
+    font-size: 1.2rem;
+    color: yellowgreen;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    padding-top: 1.2rem;
+}
+/*****************FINE HEADER********************/
+
+/*****************INIZIO BODY********************/
+body{
+    font-family: 'Questrial', sans-serif;
+    background-image: url("https://i.stack.imgur.com/OI2OX.png");
+}
+.grid{
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.black {
+    background-color: black;
+    opacity: 90%;
+
+}
+
+.white{
+    background-color: white;
+    opacity: 90%;
+}
+
+
+#corpotext{
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+}
+.whitetext{
+    color:white;
+}
+.blacktext{
+    color:black;
+}
+
+.yellowgreentext{
+    color:yellowgreen;
+}
+
+i {
+    font-size: 45px;
+}
+
+#hardskill{
+    padding: 10px;
+    min-width: auto;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center ;
+    color: yellowgreen;
+}
+
+#icon{
+    flex-direction: row;
+    width: 25%;
+}
+
+.blacky {
+    color: black;
+}
+
+/**********ANIMAZIONE OVERLAY IMMAGINE************/
+#profileimg {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 100%;
+}
+.col-33 {
+    position: relative;
+    width: 50%;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: yellowgreen;
+  }
+  .col-33:hover .overlay {
+    opacity: 1;
+  } 
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  i{
+      width: 40px;
+      color: yellowgreen;
+  }
+/**********FINE ANIMAZIONE OVERLAY IMMAGINE************/
+
+
+
+/********** Large devices only **********/
+
+@media (min-width: 992px) {
+    .col-33{
+         width: 30%;
+         
+         
+    }
+    .col-66{
+        width: 60%;
+        font-size: 1.8rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+/********** Medium devices only **********/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-33{
+         width: 45%;
+    }
+    .col-66{
+         width: 45%;
+         font-size: 1.6rem;
+    }
+}
+
+
+/********** Mobile only **********/
+
+@media (max-width: 767px){
+    .grid{
+        padding: 0px;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
+    .col-33{
+        width: 100%;
+   }
+   .col-66{
+        width: 100%;
+        padding: 5%;
+        font-size: 1.4rem;
+   }
+}

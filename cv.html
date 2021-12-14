@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CV Matteo Polo</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     <div class="header">     
         <ul class="menu">
 
-            <li class="dropdown">Soft Skill
+            <li class="dropdown"><a href="#softskill">Soft Skill</a>
                 <ul class="dropdown-content">
                     <li>Teamwork</li>
                     <li>Agile</li>
@@ -23,7 +24,7 @@
                 </ul>
             </li>
 
-            <li class="dropdown">Hard Skill
+            <li class="dropdown"><a href="#hardskill">Hard Skill</a>
                 <ul class="dropdown-content">
                     <li>HTML5</li>
                     <li>CSS3</li>
@@ -32,16 +33,16 @@
                 </ul>
             </li>
             
-            <li class="dropdown" id="dropdownimg"><img src="logoMatteoPolo.png" onmouseover="this.src='logoMatteoPolo2.png'" onmouseout="this.src='logoMatteoPolo.png'">
+            <li class="dropdown" id="dropdownimg"><img src="./src/logoMatteoPolo.png" href="#home" onmouseover="this.src='./src/logoMatteoPolo2.png'" onmouseout="this.src='./src/logoMatteoPolo.png'"></li>
             </li>
 
-            <li class="dropdown">About
+            <li class="dropdown"><a href="#about">About</a>
                 <ul class="dropdown-content">
                     <li>Formazione</li>
                     <li>Lavoro</li>
                 </ul>
             </li>
-            <li class="dropdown">Contatti
+            <li class="dropdown"><a href="#contatti">Contatti</a>
                 <ul class="dropdown-content">
                     <li>	
                         <a href="tel:00393407382688">Call me!</a></li>
@@ -53,10 +54,70 @@
         </ul>
     </div>
     
-    <div class="corpocontenitore">
+    <div class="grid white" id="home">
+        <div class="col-66"><h1>I'M MATTEO POLO, A JUNIOR FRONTEND DEVELOPER </h1> <br> <p class="blacktext" id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+        <div class="col-33">
+            <img src="./src/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
+            <div class="overlay">
+            <div class="text">Hello, I'm Matteo</div>
+          </div>
+        </div>
+    </div>
 
-            <div class="corpotext col-lg-8 col-md-7 col-sm-12">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-            <div class="corpotext col-lg-4 col-md-5 col-sm-12"><img src="matteopoloprofilo.jpeg" alt=""></div>
-    </div>    
+    <div class="grid reverse black" id="softskill">
+        <div class="col-33">
+            <div id="hardskill" class="black">
+                <div id="icon"><i class="fas fa-user-friends"></i><p>TeamWork</p></div>
+                <div id="icon"><i class="fas fa-cogs"></i></i><p>Agile</p></div>
+                <div id="icon"><i class="fas fa-screwdriver"></i><p>Problem Solving</p></div>
+            </div>
+            <div class="overlay">
+            <div class="text">Soft skill</div>
+          </div>
+        </div>
+        <div class="col-66"><h1 class="yellowgreentext">SOFT SKILL</h3> <br> <p class="whitetext" id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+    </div>
+
+    <div class="grid white" id="hardskill">
+        <div class="col-66"><h1>HARD SKILL </h1> <br> <p class="blacktext" id="corpotext">Ho acquisito le mie hard skill grazie allo studio costante e la partecipazione ad alcuni corsi che hanno hanno rappresentato un'importante momento formativo: Start2Impact, Frontend Developer by Tree, HTML, CSS, and Javascript for Web Developers.</p></div>
+        <div class="col-33">
+            <div id="hardskill" class="white">
+                <div id="icon"><i class="fab fa-html5 black"></i><p class="blacky">Html5</p></div>
+                <div id="icon"><i class="fab fa-css3-alt black"></i><p class="blacky">Css3</p></div>
+                <div id="icon"><i class="fab fa-sass black"></i></div>
+                <div id="icon"><i class="fab fa-js black"></i><p class="blacky">Javascript</p></div>
+                <div id="icon"><i class="fab fa-react black"></i><p class="blacky">React</p></div>
+                <div id="icon"><i class="fab fa-git black"></i></div>
+                <div id="icon"><i class="fab fa-bootstrap black"></i><p class="blacky">bootstrap</p></div>
+            </div>
+            <div class="overlay">
+            <div class="text">Hard Skill</div>
+          </div>
+        </div>
+    </div>
+
+    <div class="grid reverse black" id="about">
+        <div class="col-33">
+            <img src="./src/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
+            <div class="overlay">
+            <div class="text">Qualocosa riguardo la mia vita</div>
+          </div>
+        </div>
+        <div class="col-66"><h1 class="yellowgreentext">ABOUT</h3> <br> <p class="whitetext" id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+    </div>
+
+    <div class="grid white" id="contatti">
+        <div class="col-66"><h1>CONTATTI </h1> <br> <p class="blacktext"id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p></div>
+        <div class="col-33">
+            <img src="./src/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
+            <div class="overlay">
+            <div class="text">I miei contatti</div>
+          </div>
+        </div>
+    </div>
+
+    <div class="grid reverse black" id="about">
+
+    </div>
 </body>
 </html>
