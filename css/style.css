@@ -138,6 +138,9 @@ i {
     color: black;
 }
 
+.whitey {
+    color: white;
+}
 /**********ANIMAZIONE OVERLAY IMMAGINE************/
 #profileimg {
     display: block;
