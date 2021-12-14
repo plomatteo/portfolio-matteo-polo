@@ -8,8 +8,6 @@
     color:white;
 
 }
-
-
 h1, h2, h3, h4, h5{
     color:black;
     text-align: center;
@@ -101,6 +99,7 @@ input[type=checkbox]{
 
 /*****************FINE HEADER********************/
 
+
 /*****************INIZIO BODY********************/
 body{
     font-family: 'Questrial', sans-serif;
@@ -112,6 +111,7 @@ body{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .black {
@@ -124,7 +124,6 @@ body{
     background-color: white;
     opacity: 100%;
 }
-
 
 #corpotext{
     display: flex;
@@ -143,10 +142,22 @@ body{
 }
 
 i {
-    font-size: 45px;
+    font-size: 50px;
 }
 
 #hardskill{
+    padding: 10px;
+    min-width: auto;
+    min-height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center ;
+    color: yellowgreen;
+}
+
+#softskill{
     padding: 10px;
     min-width: auto;
     min-height: 250px;
@@ -213,7 +224,7 @@ i {
 /**********FINE ANIMAZIONE OVERLAY IMMAGINE************/
 
 
-
+/**********INIZIO MEDIAQUERY**************************/
 /********** Large devices only **********/
 
 @media (min-width: 992px) {
@@ -227,6 +238,8 @@ i {
         font-size: 1.8rem;
         display: flex;
         flex-direction: column;
+        padding-top: 5%;
+        padding-bottom: 5%;
 
     }
 }
@@ -239,6 +252,8 @@ i {
     .col-66{
          width: 45%;
          font-size: 1.6rem;
+         padding-top: 5%;
+         padding-bottom: 5%;
     }
 }
 
@@ -256,10 +271,11 @@ i {
      padding: 16px 0;
      z-index: 10;
      padding-top: 20px;
+     margin-top: 51px;
     }
     .menu li:hover {
      display: inline-block;
-     background-color:#4c9e9e;
+     background-color:black;
      transition: 0.3s ease;
     }
     .menu li + li {
@@ -278,7 +294,7 @@ i {
      transform: translateX(35%);
     }
     .dropdown li:hover {
-     background-color: #4c9e9e;
+     background-color: black;
     }
 
 
