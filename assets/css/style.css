@@ -28,9 +28,10 @@ h1, h2, h3, h4, h5{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 3% 4%;
     background-color:black;
     color: #fff;
+
    }
    .nav-links a {
     color: #fff;
@@ -96,7 +97,7 @@ input[type=checkbox]{
 /*****************INIZIO BODY********************/
 body{
     font-family: 'Questrial', sans-serif;
-    background-image: url("https://i.stack.imgur.com/OI2OX.png");
+    background-color: black;
 }
 .grid{
     padding: 3%;
@@ -105,17 +106,14 @@ body{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    min-height: 300px;
 }
 
 .black {
     background-color: black;
-    opacity: 80%;
-
 }
-
 .white{
     background-color: white;
-    opacity: 100%;
 }
 
 #corpotext{
@@ -207,6 +205,8 @@ form {
     margin: 0 auto;
     color: black;
     background-color: yellowgreen;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
   }
   
   .container * {
@@ -291,11 +291,14 @@ form {
     display: block;
     width: 100%;
     height: auto;
-    opacity: 100%;
+    opacity: 1;
+
 }
 .col-33 {
     position: relative;
     width: 50%;
+    background-color: black;
+    opacity: 1;
   }
 .overlay {
     position: absolute;
@@ -333,6 +336,9 @@ form {
 /********** Large devices only **********/
 
 @media (min-width: 992px) {
+    .logomobile{
+      display: none;
+    }
     .col-33{
          width: 30%;
     }
@@ -359,7 +365,10 @@ form {
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .col-33{
+  .logomobile{
+    display: none;
+  }  
+  .col-33{
          width: 45%;
     }
     .col-66{
@@ -384,6 +393,9 @@ form {
 /********** Mobile only **********/
 
 @media (max-width: 767px){
+  .logo{
+    display: none;
+  }
     .menu { 
      display:none;
      position: absolute;
