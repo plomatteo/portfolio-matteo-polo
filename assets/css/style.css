@@ -212,6 +212,7 @@ form {
 #campomail {
     height: 150px;
 }
+
 /**********INIZIO FORM CONTATTI*********************/
 
   .container {
@@ -301,12 +302,37 @@ form {
     width: 100px;
   }
 
+  .col-certificate{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+    text-align: center;
+    padding-bottom: 2em;
+
+}
+
+  .widthdivcertificate{
+    width: 50%;
+    align-content: space-around;
+  }
+
+  .widthcertificate {
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 5%;
+  }
+
 /**********ANIMAZIONE OVERLAY IMMAGINE************/
 #profileimg {
     display: block;
     width: 100%;
     height: auto;
     opacity: 1;
+    border: solid 6px rgb(173, 173, 173);
 
 }
 .col-33 {
@@ -351,6 +377,9 @@ form {
 /********** Large devices only **********/
 
 @media (min-width: 992px) {
+  h2{
+    font-size: 1.8rem;
+  }
     .logomobile{
       display: none;
     }
@@ -373,13 +402,22 @@ form {
         padding-top: 5%;
         padding-bottom: 5%;
         align-items: center;
-
-
     }
+
 }
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
+  h2{
+    font-size: 1.5rem;
+  }
+
+  .widthcertificate {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+  }
   .logo{
     display: none;
   }
@@ -435,7 +473,6 @@ form {
         padding-top: 5%;
         padding-bottom: 5%;
         align-items: center;
-
     }
 }
 
@@ -443,6 +480,19 @@ form {
 /********** Mobile only **********/
 
 @media (max-width: 767px){
+  #profileimg {
+    border: none;
+}
+
+  .widthcertificate {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
   .logo{
     display: none;
   }
@@ -505,6 +555,13 @@ form {
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
-
+}
+.col-certificate{
+  width: 100%;
+  flex-direction: column;
+}
+.widthdivcertificate{
+  width: 100%;
+  align-content: space-around;
 }
 }
