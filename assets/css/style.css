@@ -5,7 +5,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color:white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -116,6 +115,11 @@ body{
     background-color: white;
 }
 
+.black>p{
+  display: flex;
+  text-align: center;
+}
+
 #corpotext{
     display: flex;
     align-items: center;
@@ -134,6 +138,7 @@ body{
 
 i {
     font-size: 50px;
+    color: black;
 }
 
 #hardskill{
@@ -157,12 +162,23 @@ i {
     justify-content: space-around;
     align-items: center;
     text-align: center ;
-    color: yellowgreen;
+    color: white;
 }
 
 #icon{
-    flex-direction: row;
+  display: flex;
+  flex-direction: column;
     width: 25%;
+    align-items: center;
+}
+
+#icon>i, #icon>p{
+  padding: 4%;
+  text-align: center;
+}
+.fa-phone-volume{
+  color: black;
+  font-size: 1em;
 }
 
 .blacky {
@@ -196,7 +212,6 @@ form {
 #campomail {
     height: 150px;
 }
-
 /**********INIZIO FORM CONTATTI*********************/
 
   .container {
@@ -327,7 +342,7 @@ form {
 
   i{
       width: 40px;
-      color: yellowgreen;
+      color: black;
   }
 /**********FINE ANIMAZIONE OVERLAY IMMAGINE************/
 
@@ -365,9 +380,44 @@ form {
 /********** Medium devices only **********/
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .logomobile{
+  .logo{
     display: none;
-  }  
+  }
+    .menu { 
+     display:none;
+     position: absolute;
+     background-color:yellowgreen;
+     right: 0;
+     left: 0;
+     text-align: center;
+     padding: 16px 0;
+     z-index: 10;
+     padding-top: 20px;
+     margin-top: 39px;
+    }
+    .menu li:hover {
+     display: inline-block;
+     background-color:black;
+     transition: 0.3s ease;
+    }
+    .menu li + li {
+     margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+     display: block;
+    }
+
+    .hamburger {
+     display: block;
+    }
+    .dropdown {
+     left: 50%;
+     top: 30px;
+     transform: translateX(35%);
+    }
+    .dropdown li:hover {
+     background-color: black;
+    }
   .col-33{
          width: 45%;
     }
