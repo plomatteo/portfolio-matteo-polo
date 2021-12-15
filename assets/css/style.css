@@ -88,6 +88,7 @@ input[type=checkbox]{
     display: none;
     font-size: 45px;
     user-select: none;
+    color: white;
    }
 
 /*****************FINE HEADER********************/
@@ -444,6 +445,9 @@ form {
     input[type=checkbox]:checked ~ .menu{
      display: block;
     }
+    input[type=checkbox]:checked ~ .hamburger {
+      color: yellowgreen;
+     }
 
     .hamburger {
      display: block;
@@ -520,6 +524,10 @@ form {
      display: block;
     }
 
+    input[type=checkbox]:checked ~ .hamburger {
+      color: yellowgreen;
+     }
+     
     .hamburger {
      display: block;
     }
