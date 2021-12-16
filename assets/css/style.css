@@ -28,6 +28,9 @@ h1 {
   padding-left: 10%;
   padding-right: 10%;
 }
+a{
+  text-decoration: none;
+}
 /*****************INIZIO HEADER********************/
 /* NAVBAR*/
 .navbar {
@@ -383,10 +386,10 @@ input[type=checkbox]:checked ~ .hamburger {
      padding-bottom: 5%;
 }
 .col-form{
-    width: 100%;
+    width: 30%;
     font-size: 1.6rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-top: 5%;
     padding-bottom: 5%;
     align-items: center;
