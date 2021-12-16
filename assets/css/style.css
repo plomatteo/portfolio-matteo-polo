@@ -25,6 +25,8 @@ h1 {
 }
 #footerfont{
   font-size: 12px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 /*****************INIZIO HEADER********************/
 /* NAVBAR*/
@@ -96,7 +98,7 @@ body{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    min-height: 300px;
+    min-height: 220px;
 }
 /*Classi background-color banda orizzontale*/
 .blackbackground {
@@ -372,10 +374,10 @@ input[type=checkbox]:checked ~ .hamburger {
 }
 /*Fine Header*/
 .col-33{
-     width: 50%;
+     width: 40%;
 }
 .col-66{
-     width: 50%;
+     width: 40%;
      font-size: 1.6rem;
      padding-top: 5%;
      padding-bottom: 5%;
