@@ -19,93 +19,69 @@
 <body>
 
     <nav class="navbar">
+        
         <!-- LOGO -->
         <div class="logo"><img src="assets/img/logoMatteoPolo.png" alt=""></div>
         <div class="logomobile"><img src="assets/img/logoMatteoPoloMobile.png" alt=""></div>
+        
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
-            <!-- USING CHECKBOX HACK -->
+            
+            <!-- USING CHECKBOX -->
             <input type="checkbox" id="checkbox_toggle" />
             <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            
             <!-- NAVIGATION MENUS -->
             <div class="menu">
 
                 <li class="service">
                     <a href="#softskill">Soft Skill</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li>Teamwork</li>
-                        <li>Agile</li>
-                        <li>Problem Solving</li>
-                    </ul>
                 </li>
 
                 <li class="service">
                     <a href="#hardskill">Hard Skill</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>React.js</li>
-                    </ul>
                 </li>
 
                 <li class="service">
                     <a href="#about">About</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li>Formazione</li>
-                        <li>Lavoro</li>
-                    </ul>
                 </li>
 
                 <li class="service">
                     <a href="#contatti">Contatti</a>
-                    <!-- DROPDOWN MENU -->
-                    <ul class="dropdown">
-                        <li><a href="tel:00393407382688">Call me!</a></li>
-                        <li><a href="mailto:matte.polo@gmail.com">Send Email</a></li>
-                    </ul>
                 </li>
 
             </div>
         </ul>
     </nav>
 
-    <div class="grid white" id="home">
+    <div class="grid whitebackground" id="home">
         <div class="col-66">
             <h1>SONO MATTEO POLO, UNO STUDENDE DI FRONTEND</h1> <br>
             <p class="blacktext" id="corpotext">Sono una persona energica e pacata che raggiunge gli obiettivi facendo squadra.
                 Mi sono diplomato in informatica. Per 8 anni ho lavorato nella P.A. a stretto contatto con le imprese.
-                Da 6 mesi ho intrapreso un cambiamento scegliendo di aggiornare le mie competenze da Sviluppatore Frontend.
-                Tra il 2016 e il 2021 sono stato vicesindaco e assessore al turismo, attività produttive e sport del Comune di Grado.</p>
+                Da 6 mesi ho intrapreso un cambiamento scegliendo di aggiornare le mie competenze da Sviluppatore Frontend.</p>
         </div>
         <div class="col-33">
             <img src="./assets/img/matteopoloprofilo.jpeg" alt="profileimg" id="profileimg">
-            <div class="overlay"><a href="#contatti">
-                <div class="text">Ciao, sono Matteo. Click qui per i contatti!
-                </div>
-                </a>
-            </div>
+            
         </div>
     </div>
 
-    <div class="grid black reverse" id="softskill">
+    <div class="grid blackbackground reverse" id="softskill">
         
         <div class="col-33">
-            <div class="black" id="softskill">
+            <div class="black iconecontainer">
                 <div id="icon">
-                    <i class="fas fa-user-friends whitey"></i>
-                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTeamWork</p>
+                    <i class="fas fa-user-friends whitetext"></i>
+                    <p class="iconwhitetext">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspTeamWork</p>
                 </div>
                 <div id="icon">
-                    <i class="fas fa-cogs whitey"></i></i>
-                    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAgile</p>
+                    <i class="fas fa-cogs whitetext"></i></i>
+                    <p class="iconwhitetext">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspAgile</p>
                 </div>
                 <div id="icon">
-                    <i class="fas fa-screwdriver whitey"></i>
-                    <p>Problem Solving</p>
+                    <i class="fas fa-screwdriver whitetext"></i>
+                    <p class="iconwhitetext">Problem Solving</p>
                 </div>
             </div>
         </div>
@@ -115,13 +91,11 @@
                 industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                 unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
                 not only five centuries, but also the leap into electronic typesetting, remaining essentially
-                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
-                versions of Lorem Ipsum.</p>
+                unchanged. </p>
         </div>
     </div>
 
-    <div class="grid white" id="hardskill">
+    <div class="grid whitebackground" id="hardskill">
         <div class="col-66">
             <h1>HARD SKILL </h1> <br>
             <p class="blacktext" id="corpotext">Ho acquisito le mie hard skill grazie allo studio costante e la
@@ -129,34 +103,38 @@
                 Start2Impact, Frontend Developer by Tree, HTML, CSS, and Javascript for Web Developers.</p>
         </div>
         <div class="col-33">
-            <div class="white" id="hardskill">
+            <div class="whitebackground iconecontainer">
                 <div id="icon">
-                    <i class="fab fa-html5 blacky"></i>
-                    <p class="blacky">Html5</p>
+                    <i class="fab fa-html5 blacktext"></i>
+                    <p class="iconblacktext">Html5</p>
                 </div>
-                <div id="icon"><i class="fab fa-css3-alt blacky"></i>
-                    <p class="blacky">Css3</p>
+                <div id="icon"><i class="fab fa-css3-alt blacktext"></i>
+                    <p class="iconblacktext">Css3</p>
                 </div>
-                <div id="icon"><i class="fab fa-sass blacky"></i>
-                    <p class="whitey"> " </p>
+                <div id="icon"><i class="fab fa-sass blacktext"></i>
+                    <p class="iconwhitetext"> " </p>
                 </div>
-                <div id="icon"><i class="fab fa-js blacky"></i>
-                    <p class="blacky">Javascript</p>
+                <div id="icon"><i class="fab fa-js blacktext"></i>
+                    <p class="iconblacktext">Javascript</p>
                 </div>
-                <div id="icon"><i class="fab fa-react blacky"></i>
-                    <p class="blacky">&nbsp&nbsp&nbspReact</p>
+                <div id="icon"><i class="fab fa-react blacktext"></i>
+                    <p class="iconblacktext">&nbsp&nbsp&nbspReact</p>
                 </div>
-                <div id="icon"><i class="fab fa-git blacky"></i>
-                    <p class="whitey"> " </p>
+                <div id="icon"><i class="fab fa-git blacktext"></i>
+                    <p class="iconwhitetext"> " </p>
                 </div>
                 <div id="icon"><i class="fab fa-bootstrap"></i>
-                    <p class="blacky">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbootstrap</p>
+                    <p class="iconblacktext">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbootstrap</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="grid white" id="hardskill">
-        <div class="col-certificate">
+
+    <div class="grid blackbackground">
+            <div class="titlecert">
+            <h1 class="yellowgreentext">CERTIFICATI</h1>
+            </div>
+            <div class="col-certificate">
             <div class="widthdivcertificate">
                 <img class="widthcertificate" src="./assets/img/certificato Coursera.png" alt="">
             </div>
@@ -167,16 +145,16 @@
 
     </div>
 
-    <div class="grid reverse black" id="about">
+    <div class="grid reverse whitebackground" id="about">
         <div class="col-33">
             <img src="assets/img/abouteme.jpg" alt="profileimg" id="profileimg">
             <div class="overlay">
-                <div class="text">Qualocosa riguardo la mia vita</div>
+                <div class="overlaytext">La bici è la mia vera passione</div>
             </div>
         </div>
         <div class="col-66">
-            <h1 class="yellowgreentext">ABOUT</h3> <br>
-                <p class="whitetext" id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting
+            <h1>ABOUT</h1> <br>
+                <p class="blacktext" id="corpotext"> Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                     unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
                     not only five centuries, but also the leap into electronic typesetting, remaining essentially
@@ -186,16 +164,17 @@
         </div>
     </div>
 
-    <div class="grid white" id="contatti">
-        <div class="col-100">
-            <h1>PARLIAMOCI</h1> <br>
-            <p class="blacktext" id="corpotext">
-                Questa è la mia e-mail: </p> <br><a class="blacky"href="mailto:matte.polo@gmail.com">matte.polo@gmail.com</a>
+    <div class="grid blackbackground" id="contatti">
+        <div class="col-form">
+            <h1 class="whitetext">PARLIAMOCI</h1> <br>
+            <p class="whitetext" id="corpotext">
+                Questa è la mia e-mail: </p> <br>
+                <a class="whitetext" href="mailto:matte.polo@gmail.com">matte.polo@gmail.com</a>
             <br>
-            <p class="blacktext" id="corpotext">
-                Questa è il mio numero: </p><br><a class="blacky" href="tel:00393407382688"> Call me! <i class="fas fa-phone-volume blacky"></i></a>
+            <p class="whitetext" id="corpotext">
+                Questa è il mio numero: </p><br><a class="whitetext" href="tel:00393407382688"> Call me! <i class="fas fa-phone-volume whitetext"></i></a>
         </div>
-        <div class="container">
+        <div class="containerform">
             <form>
               <ul class="flex-outer">
                 <li>

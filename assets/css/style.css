@@ -1,4 +1,4 @@
-/*reset*/
+/*RESET*/
 *,
 *:before,
 *:after {
@@ -9,18 +9,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* UTILITIES */
-a {
-    text-decoration: none;
-   }
+
+/*UTILITIES*/
 li {
     list-style: none;
    }
 h1, h2, h3, h4, h5{
     color:black;
     text-align: center;
+    width: 100%;
 }
 
+h1 {
+  font-size: 30px;
+}
 /*****************INIZIO HEADER********************/
 /* NAVBAR STYLING STARTS */
 .navbar {
@@ -30,7 +32,6 @@ h1, h2, h3, h4, h5{
     padding: 3% 4%;
     background-color:black;
     color: #fff;
-
    }
    .nav-links a {
     color: #fff;
@@ -45,42 +46,27 @@ h1, h2, h3, h4, h5{
     gap: 1em;
     font-size: 18px;
    }
-   .menu li:hover {
-    background-color: yellowgreen;
-    border-radius: 5px;
-    transition: 0.3s ease;
-   }
-   .menu li {
-    padding: 5px 14px;
-   }
+      .menu li:hover {
+      background-color: yellowgreen;
+      border-radius: 5px;
+      transition: 0.3s ease;
+      }
+      .menu li {
+       padding: 5px 14px;
+      }
+      .menu>li>a {
+        text-decoration: none;
+        font-size: 1.6rem;
+       }
+
    /* DROPDOWN MENU */
    .services {
     position: relative; 
    }
-   .dropdown {
-    background-color: yellowgreen;
-    padding: 1em 0;
-    position: absolute; /*WITH RESPECT TO PARENT*/
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   }
-   .dropdown li + li {
-    margin-top: 10px;
-   }
-   .dropdown li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .dropdown li:hover {
-    background-color: #4c9e9e;
-   }
    .services:hover .dropdown {
     display: block;
    }
-
-input[type=checkbox]{
+    input[type=checkbox]{
     display: none;
    } 
    /*HAMBURGER MENU*/
@@ -90,15 +76,16 @@ input[type=checkbox]{
     user-select: none;
     color: white;
    }
-
 /*****************FINE HEADER********************/
 
 
 /*****************INIZIO BODY********************/
+/* Default font & background */
 body{
     font-family: 'Questrial', sans-serif;
     background-color: black;
 }
+/*Classe banda orizzontale*/
 .grid{
     padding: 3%;
     display: flex;
@@ -108,115 +95,102 @@ body{
     text-align: center;
     min-height: 300px;
 }
-
-.black {
+/*Classe background-color banda orizzontale*/
+.blackbackground {
     background-color: black;
 }
-.white{
+.whitebackground{
     background-color: white;
 }
-
-.black>p{
-  display: flex;
-  text-align: center;
-}
-
 #corpotext{
     display: flex;
     align-items: center;
     font-size: 0.8em;
 }
+/*Colore testo*/
 .whitetext{
     color:white;
 }
 .blacktext{
     color:black;
 }
-
 .yellowgreentext{
     color:yellowgreen;
 }
-
+/*Immagini*/
+#profileimg {
+  display: block;
+  width: 100%;
+  border: solid 6px rgb(173, 173, 173);
+  height: auto;
+}
+/*Icone*/
 i {
     font-size: 50px;
     color: black;
+    width: 40px;
 }
-
-#hardskill{
-    padding: 10px;
-    min-width: auto;
-    min-height: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center ;
-    color: yellowgreen;
+.iconecontainer{
+  min-width: auto;
+  min-height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center ;
 }
-
-#softskill{
-    padding: 10px;
-    min-width: auto;
-    min-height: 250px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center ;
-    color: white;
+.iconwhitetext{
+  font-size: 1rem;
+  color: white;
 }
-
+.iconblacktext{
+  font-size: 1rem;
+  color: black;
+}
 #icon{
   display: flex;
   flex-direction: column;
     width: 25%;
     align-items: center;
 }
-
 #icon>i, #icon>p{
   padding: 4%;
   text-align: center;
 }
 .fa-phone-volume{
-  color: black;
   font-size: 1em;
 }
 
-.blacky {
-    color: black;
-}
-
-.whitey {
-    color: white;
-}
-
-form {
+/**********INIZIO BANDA CERTIFICATI***********/
+  .col-certificate{
     width: 100%;
-    max-width: 800px;
-    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding-bottom: 5%;
+    padding-top: 3%;
 }
+  .widthdivcertificate{
+    width: 50%;
+    align-content: space-around;
+  }
+  .widthcertificate {
+    width: 80%
+  }
 
-.half {
-    width: 49.5%;
-    font-size: 1.4rem;
-    color: black;
-    margin-bottom: 4px;
-}
-
-.full {
+  .titlecert{
     width: 100%;
-    font-size: 1.4rem;
-    color: black;
-    margin-bottom: 4px;
-}
-
-#campomail {
-    height: 150px;
-}
+    padding: 15px;
+  }
 
 /**********INIZIO FORM CONTATTI*********************/
-
-  .container {
+form {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+}
+  .containerform {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
@@ -225,62 +199,47 @@ form {
     padding-bottom: 10px;
     margin-bottom: 25px;
   }
-  
-  .container * {
-    box-sizing: border-box;
-  }
-  
   .flex-outer,
   .flex-inner {
     list-style-type: none;
     padding: 0;
   }
-  
   .flex-outer {
     max-width: 800px;
     margin: 0 auto;
   }
-  
   .flex-outer li,
   .flex-inner {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
   }
-  
   .flex-inner {
     padding: 0 8px;
     justify-content: space-between;  
   }
-  
   .flex-outer > li:not(:last-child) {
     margin-bottom: 20px;
   }
-  
   .flex-outer li label,
   .flex-outer li p {
     padding: 8px;
     font-weight: 300;
     text-transform: uppercase;
     color: black;
-    
   }
-  
   .flex-outer > li > label,
   .flex-outer li p {
     flex: 1 0 120px;
     max-width: 220px;
   }
-  
   .flex-outer > li > label + *,
   .flex-inner {
     flex: 1 0 220px;
   }
-  
   .flex-outer li p {
     margin: 0;
   }
-  
   .flex-outer li input:not([type='checkbox']),
   .flex-outer li textarea {
     padding: 15px;
@@ -288,7 +247,6 @@ form {
     font-family: 'Questrial', sans-serif;
     color: black;
   }
-  
   .flex-outer li button {
     margin-left: auto;
     padding: 8px 16px;
@@ -298,49 +256,19 @@ form {
     text-transform: uppercase;
     border-radius: 2px;
   }
-  
   .flex-inner li {
     width: 100px;
   }
+    #campomail {
+      height: 150px;
+    }
+/**********FINE FORM CONTATTI*********************/
 
-  .col-certificate{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: space-around;
-    text-align: center;
-    padding-bottom: 2em;
-
-}
-
-  .widthdivcertificate{
-    width: 50%;
-    align-content: space-around;
-  }
-
-  .widthcertificate {
-    width: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-bottom: 5%;
-  }
 
 /**********ANIMAZIONE OVERLAY IMMAGINE************/
-#profileimg {
-    display: block;
-    width: 100%;
-    height: auto;
-    opacity: 1;
-    border: solid 6px rgb(173, 173, 173);
-
-}
 .col-33 {
     position: relative;
     width: 50%;
-    background-color: black;
-    opacity: 1;
   }
 .overlay {
     position: absolute;
@@ -354,10 +282,10 @@ form {
     transition: .5s ease;
     background-color: yellowgreen;
   }
-  .col-33:hover .overlay {
+.col-33:hover .overlay {
     opacity: 1;
   } 
-  .text {
+  .overlaytext {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -366,134 +294,114 @@ form {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
-
-  i{
-      width: 40px;
-      color: black;
-  }
 /**********FINE ANIMAZIONE OVERLAY IMMAGINE************/
 
 
+
 /**********INIZIO MEDIAQUERY**************************/
+
 /********** Large devices only **********/
-
 @media (min-width: 992px) {
-  h2{
-    font-size: 1.8rem;
-  }
-    .logomobile{
-      display: none;
-    }
-    .col-33{
-         width: 30%;
-    }
-    .col-66{
-        width: 60%;
-        font-size: 1.8rem;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
-    .col-100{
-        width: 100%;
-        font-size: 1.8rem;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        align-items: center;
-    }
-
-}
-/********** Medium devices only **********/
-
-@media (min-width: 768px) and (max-width: 991px) {
-  h2{
-    font-size: 1.5rem;
-  }
-
-  .widthcertificate {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 5%;
-  }
-  .logo{
+  .logomobile{
     display: none;
   }
-    .menu { 
-     display:none;
-     position: absolute;
-     background-color:yellowgreen;
-     right: 0;
-     left: 0;
-     text-align: center;
-     padding: 16px 0;
-     z-index: 10;
-     padding-top: 20px;
-     margin-top: 39px;
-    }
-    .menu li:hover {
-     display: inline-block;
-     background-color:black;
-     transition: 0.3s ease;
-    }
-    .menu li + li {
-     margin-top: 12px;
-    }
-    input[type=checkbox]:checked ~ .menu{
-     display: block;
-    }
-    input[type=checkbox]:checked ~ .hamburger {
-      color: yellowgreen;
-     }
-
-    .hamburger {
-     display: block;
-    }
-    .dropdown {
-     left: 50%;
-     top: 30px;
-     transform: translateX(35%);
-    }
-    .dropdown li:hover {
-     background-color: black;
-    }
   .col-33{
-         width: 45%;
-    }
-    .col-66{
-         width: 45%;
-         font-size: 1.6rem;
-         padding-top: 5%;
-         padding-bottom: 5%;
-    }
-    .col-100{
-        width: 100%;
-        font-size: 1.6rem;
-        display: flex;
-        flex-direction: column;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        align-items: center;
-    }
+       width: 30%;
+  }
+  .col-66{
+      width: 60%;
+      font-size: 1.8rem;
+      display: flex;
+      flex-direction: column;
+  }
+  .col-form{
+      width: 100%;
+      font-size: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      padding-top: 2%;
+      padding-bottom: 5%;
+      align-items: center;
+  }
 }
 
-
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  a {
+  text-decoration: none;
+  font-size: 1.3rem;
+ }
+ /*Inizio Header*/
+.logo{
+  display: none;
+}
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:yellowgreen;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+ z-index: 10;
+ padding-top: 20px;
+ margin-top: 39px;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:black;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+input[type=checkbox]:checked ~ .hamburger {
+  color: yellowgreen;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: black;
+}
+/*Fine Header*/
+.col-33{
+     width: 50%;
+}
+.col-66{
+     width: 50%;
+     font-size: 1.6rem;
+     padding-top: 5%;
+     padding-bottom: 5%;
+}
+.col-form{
+    width: 100%;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    align-items: center;
+}
+}
 /********** Mobile only **********/
-
 @media (max-width: 767px){
+  a {
+    text-decoration: none;
+    font-size: 1.3rem;
+   }
+
   #profileimg {
     border: none;
 }
-
-  .widthcertificate {
-    width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 5%;
-  }
   h2{
     font-size: 1.2rem;
   }
@@ -539,11 +447,6 @@ form {
     .dropdown li:hover {
      background-color: black;
     }
-
-
-    .grid{
-        padding: 0px;
-    }
     .reverse {
         flex-direction: column-reverse;
     }
@@ -555,7 +458,10 @@ form {
         padding: 5%;
         font-size: 1.4rem;
    }
-   .col-100{
+   .iconecontainer{
+     padding-bottom: 25px;
+   }
+   .col-form{
     width: 100%;
     font-size: 1.4rem;
     display: flex;
@@ -571,5 +477,6 @@ form {
 .widthdivcertificate{
   width: 100%;
   align-content: space-around;
+  padding-bottom: 5%;
 }
 }
