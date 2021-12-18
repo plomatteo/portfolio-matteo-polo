@@ -58,7 +58,7 @@ p{
     font-size: 18px;
    }
       .menu li:hover {
-      background-color: #009DFF;
+      background-color: yellowgreen;
       border-radius: 5px;
       transition: 0.3s ease;
       }
@@ -126,7 +126,7 @@ body{
     color:black;
 }
 .yellowgreentext{
-    color:#009DFF;
+    color:yellowgreen;
 }
 /*Immagini*/
 #profileimg {
@@ -205,7 +205,7 @@ form {
     max-width: 1200px;
     margin: 0 auto;
     color: black;
-    background-color: #009DFF;
+    background-color: yellowgreen;
     padding-bottom: 10px;
     margin-bottom: 25px;
   }
@@ -290,7 +290,7 @@ form {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #009DFF;
+    background-color: yellowgreen;
   }
 .col-33:hover .overlay {
     opacity: 1;
@@ -333,7 +333,7 @@ form {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
   a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -342,17 +342,22 @@ form {
 .logo{
   display: none;
 }
+.navbar{
+  height:180px;
+}
 .menu { 
- display:none;
+ visibility: hidden;
+ opacity: 0;
+ transition: visibility 0s, opacity 0.3s linear;
  position: absolute;
- background-color:#009DFF;
+ background-color:yellowgreen;
  right: 0;
  left: 0;
  text-align: center;
  padding: 16px 0;
  z-index: 10;
  padding-top: 20px;
- margin-top: 39px;
+ margin-top: 67px;
 }
 .menu li:hover {
  display: inline-block;
@@ -363,10 +368,12 @@ form {
  margin-top: 12px;
 }
 input[type=checkbox]:checked ~ .menu{
- display: block;
+  display:block;
+  visibility: visible;
+  opacity: 1;
 }
 input[type=checkbox]:checked ~ .hamburger {
-  color: #009DFF;
+  color: yellowgreen;
 }
 .hamburger {
  display: block;
@@ -412,20 +419,25 @@ input[type=checkbox]:checked ~ .hamburger {
   h2{
     font-size: 1.2rem;
   }
+  .navbar{
+    height:150px;
+  }
   .logo{
     display: none;
   }
     .menu { 
-     display:none;
+     visibility: hidden;
+     opacity: 0;
+     transition: visibility 0s, opacity 0.3s linear;
      position: absolute;
-     background-color:#009DFF;
+     background-color:yellowgreen;
      right: 0;
      left: 0;
      text-align: center;
      padding: 16px 0;
      z-index: 10;
      padding-top: 20px;
-     margin-top: 39px;
+     margin-top: 52px;
     }
     .menu li:hover {
      display: inline-block;
@@ -437,10 +449,13 @@ input[type=checkbox]:checked ~ .hamburger {
     }
     input[type=checkbox]:checked ~ .menu{
      display: block;
+     display:block;
+     visibility: visible;
+     opacity: 1;
     }
 
     input[type=checkbox]:checked ~ .hamburger {
-      color: #009DFF;
+      color: yellowgreen;
      }
      
     .hamburger {
