@@ -58,7 +58,7 @@ p{
     font-size: 18px;
    }
       .menu li:hover {
-      background-color: yellowgreen;
+      background-color: #009DFF;
       border-radius: 5px;
       transition: 0.3s ease;
       }
@@ -126,7 +126,7 @@ body{
     color:black;
 }
 .yellowgreentext{
-    color:yellowgreen;
+    color:#009DFF;
 }
 /*Immagini*/
 #profileimg {
@@ -205,7 +205,7 @@ form {
     max-width: 1200px;
     margin: 0 auto;
     color: black;
-    background-color: yellowgreen;
+    background-color: #009DFF;
     padding-bottom: 10px;
     margin-bottom: 25px;
   }
@@ -290,7 +290,7 @@ form {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: yellowgreen;
+    background-color: #009DFF;
   }
 .col-33:hover .overlay {
     opacity: 1;
@@ -345,7 +345,7 @@ form {
 .menu { 
  display:none;
  position: absolute;
- background-color:yellowgreen;
+ background-color:#009DFF;
  right: 0;
  left: 0;
  text-align: center;
@@ -366,7 +366,7 @@ input[type=checkbox]:checked ~ .menu{
  display: block;
 }
 input[type=checkbox]:checked ~ .hamburger {
-  color: yellowgreen;
+  color: #009DFF;
 }
 .hamburger {
  display: block;
@@ -418,7 +418,7 @@ input[type=checkbox]:checked ~ .hamburger {
     .menu { 
      display:none;
      position: absolute;
-     background-color:yellowgreen;
+     background-color:#009DFF;
      right: 0;
      left: 0;
      text-align: center;
@@ -440,7 +440,7 @@ input[type=checkbox]:checked ~ .hamburger {
     }
 
     input[type=checkbox]:checked ~ .hamburger {
-      color: yellowgreen;
+      color: #009DFF;
      }
      
     .hamburger {
