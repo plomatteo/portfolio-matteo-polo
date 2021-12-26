@@ -14,7 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>CV Matteo Polo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script  type="text/javascript" src="assets/js/text-animation.js"></script>
+    <title>Matteo P. - Frontend Developer</title>
+    <link rel="shortcut icon" href="./assets/mp.ico" />
+
 </head>
 
 <body>
@@ -57,7 +61,11 @@
 
     <div class="grid whitebackground" id="home">
         <div class="col-66">
-            <h1>SONO MATTEO E STUDIO FRONTEND</h1> <br>
+            
+            <h1>SONO MATTEO E STUDIO &nbsp<span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='["HTML", "CSS/SASS", "JAVASCRIPT", "REACT"]'></span></h1> <br>
             <p class="blacktext" id="corpotext">Sono una persona energica e pacata che raggiunge gli obiettivi facendo
                 squadra.
                 Mi sono diplomato in informatica. Per 8 anni ho lavorato nella P.A. a stretto contatto con le imprese.
@@ -121,7 +129,7 @@
         <div class="col-66">
             <h1>HARD SKILL </h1> <br>
             <p class="blacktext" id="corpotext">Ho acquisito le mie hard skill grazie allo studio costante e la
-                partecipazione ad alcuni corsi che hanno hanno rappresentato un'importante momento formativo:
+                partecipazione ad alcuni corsi che hanno hanno rappresentato un'importante momento formativo: <br>
                 Start2Impact &nbsp// &nbspFrontend Developer by Tree &nbsp//&nbsp HTML, CSS, and Javascript by Johns Hopkins University.</p>
         </div>
         <div class="col-33">
@@ -131,10 +139,13 @@
                     <p class="iconblacktext">Html5</p>
                 </div>
                 <div id="icon"><i class="fab fa-css3-alt blacktext"></i>
-                    <p class="iconblacktext">Css3</p>
+                    <p class="iconblacktext">&nbspCss3</p>
                 </div>
                 <div id="icon"><i class="fab fa-sass blacktext"></i>
-                    <p class="iconwhitetext"> " </p>
+                    <p class="iconblacktext"> &nbsp&nbsp&nbsp&nbspSass </p>
+                </div>
+                <div id="icon"><i class="fab fa-bootstrap"></i>
+                    <p class="iconblacktext">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspBootstrap</p>
                 </div>
                 <div id="icon"><i class="fab fa-js blacktext"></i>
                     <p class="iconblacktext">Javascript</p>
@@ -143,10 +154,10 @@
                     <p class="iconblacktext">&nbsp&nbsp&nbspReact</p>
                 </div>
                 <div id="icon"><i class="fab fa-git blacktext"></i>
-                    <p class="iconwhitetext"> " </p>
+                    <p class="iconblacktext">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspGit</p>
                 </div>
-                <div id="icon"><i class="fab fa-bootstrap"></i>
-                    <p class="iconblacktext">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspbootstrap</p>
+                <div id="icon"><i class="fab fa-wordpress"></i>
+                    <p class="iconblacktext">&nbsp&nbsp&nbsp&nbsp&nbspWordpress</p>
                 </div>
             </div>
         </div>
@@ -227,11 +238,35 @@
         </div>
     </div>
 
+    <a id="button" class="show"><i class="far fa-arrow-alt-circle-up" id="classiconbutton"></i></a>
     <script>
         document.getElementById("submit").addEventListener("click", function(event){
             alert("Form non ancora attivo. Verrà attivato una volta completata la superguida Javascript :-)")
         });
         </script>
+<script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+        <script>    
+            jQuery(document).ready(function() {
+              
+              var btn = $('#button');
+            
+              $(window).scroll(function() {
+                if ($(window).scrollTop() > 300) {
+                  btn.removeClass('show');
+                } else {
+                  btn.addClass('show');
+                }
+              });
+            
+              btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, '300');
+              });
+            });
+            </script>
 </body>
 <footer>
 <div class="grid whitebackground" id="about">
