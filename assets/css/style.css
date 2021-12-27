@@ -464,6 +464,7 @@ input[type=checkbox]:checked ~ .hamburger {
     display: none;
   }
     .menu { 
+     display: none;
      visibility: hidden;
      opacity: 0;
      transition: visibility 0s, opacity 0.3s linear;
@@ -487,7 +488,6 @@ input[type=checkbox]:checked ~ .hamburger {
     }
     input[type=checkbox]:checked ~ .menu{
      display: block;
-     display:block;
      visibility: visible;
      opacity: 1;
     }
@@ -546,8 +546,5 @@ input[type=checkbox]:checked ~ .hamburger {
 .titlecert{
   padding-top: 20px;
   padding-bottom: 20px;
-}
-.iconecontainer{
-  padding-right: 5%;
 }
 }
