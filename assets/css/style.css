@@ -385,6 +385,7 @@ form {
 }
 .menu { 
  visibility: hidden;
+ display: none;
  opacity: 0;
  transition: visibility 0s, opacity 0.3s linear;
  position: absolute;
@@ -546,5 +547,8 @@ input[type=checkbox]:checked ~ .hamburger {
 .titlecert{
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.iconecontainer{
+  padding-right: 5%;
 }
 }
