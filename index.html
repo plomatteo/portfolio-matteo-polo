@@ -4,18 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
-        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script  type="text/javascript" src="assets/js/text-animation.js"></script>
+    <script type="text/javascript" src="assets/js/text-animation.js"></script>
     <title>Matteo P. - Frontend Developer</title>
     <link rel="shortcut icon" href="./assets/mp.ico" />
 
@@ -23,11 +21,11 @@
 
 <body>
 
-    <nav class="navbar">
+    <nav id="firstnav" class="navbarfissa">
 
         <!-- LOGO -->
-        <div class="logo"><img src="assets/img/logoMatteoPolo.png" alt=""></div>
-        <div class="logomobile"><img src="assets/img/logoMatteoPoloMobile.png" alt=""></div>
+        <div id="logoscroll1" class="logo"><img src="assets/img/logoMatteoPolo.png" alt=""></div>
+        <div id="logoscroll2" class="logomobile"><img src="assets/img/logoMatteoPoloMobile.png" alt=""></div>
 
         <!-- NAVIGATION MENU -->
         <ul class="nav-links">
@@ -40,60 +38,55 @@
             <div class="menu">
 
                 <li class="service">
-                    <a href="#softskill">Soft Skill</a>
+                    <a href="#section1" class="anchor">Soft Skill</a>
                 </li>
 
                 <li class="service">
-                    <a href="#hardskill">Hard Skill</a>
+                    <a href="#section2" class="anchor">Hard Skill</a>
                 </li>
 
                 <li class="service">
-                    <a href="#about">About</a>
+                    <a href="#section3" class="anchor">About</a>
                 </li>
 
                 <li class="service">
-                    <a href="#contatti">Contatti</a>
+                    <a href="#section4" class="anchor">Contatti</a>
                 </li>
 
             </div>
         </ul>
     </nav>
 
-    <div class="grid whitebackground" id="home">
+    <div class="grid whitebackground" data-scroll href="home">
         <div class="col-66">
-            
+
             <h1>SONO MATTEO E CONOSCO &nbsp
                 <br>
-                <span
-                class="txt-rotate"
-                data-period="1000"
-                data-rotate='["HTML", "CSS/SASS", "BOOTSTRAP", "JAVASCRIPT", "JQUERY", "REACT", "GIT", "WORDPRESS"]'></span></h1> <br>
-            <p class="blacktext" id="corpotext">Sono una persona energica e pacata che raggiunge gli obiettivi facendo
-                squadra.
-                Mi sono diplomato in informatica. Per 8 anni ho lavorato nella P.A. a stretto contatto con le imprese.
-                Da 6 mesi ho intrapreso un cambiamento scegliendo di aggiornare le mie competenze da Sviluppatore
-                Frontend.</p>
-                <div class="whitebackground iconecontainer">
-                    <div id="icon">
-                        <a target="blanck" href="https://www.linkedin.com/in/plomatteo/">
+                <span class="txt-rotate" data-period="1000" data-rotate='["HTML", "CSS/SASS", "BOOTSTRAP", "JAVASCRIPT", "JQUERY", "REACT", "GIT", "WORDPRESS"]'></span></h1> <br>
+            <p class="blacktext" id="corpotext">Sono una persona energica e pacata che raggiunge gli obiettivi facendo squadra. Mi sono diplomato in informatica. Per 8 anni ho lavorato nella P.A. a stretto contatto con le imprese. Da 6 mesi ho intrapreso un cambiamento scegliendo di aggiornare
+                le mie competenze da Sviluppatore Frontend.
+            </p>
+            <div class="whitebackground iconecontainer">
+                <div id="icon">
+                    <a target="blanck" href="https://www.linkedin.com/in/plomatteo/">
                         <i class="fab fa-linkedin-in blacktext"></i>
                         <p class="iconblacktext">&nbspLinkedin</p>
-                        </a>
-                    </div>
-                    <div id="icon">
-                        <a target="blanck" href="https://github.com/plomatteo?tab=repositories">
-                        <i class="fab fa-github blacktext"></i>
-                        </a>
-                        <p class="iconblacktext">&nbspGitHub</p>
-                    </div>
-                
-                        <div id="icon">
-                            <a target="blanck" href="https://twitter.com/plomatteo ">
-                            <i class="fab fa-twitter blacktext"></i>
-                            </a>
-                            <p class="iconblacktext">&nbspTwitter </p>
-                        </div>
+                    </a>
                 </div>
+                <div id="icon">
+                    <a target="blanck" href="https://github.com/plomatteo?tab=repositories">
+                        <i class="fab fa-github blacktext"></i>
+                    </a>
+                    <p class="iconblacktext">&nbspGitHub</p>
+                </div>
+
+                <div id="icon">
+                    <a target="blanck" href="https://twitter.com/plomatteo ">
+                        <i class="fab fa-twitter blacktext"></i>
+                    </a>
+                    <p class="iconblacktext">&nbspTwitter </p>
+                </div>
+            </div>
         </div>
         <div class="col-33">
             <img src="./assets/img/matteopoloprofilo.jpg" alt="profileimg" id="profileimg">
@@ -101,7 +94,7 @@
         </div>
     </div>
 
-    <div class="grid blackbackground reverse" id="softskill">
+    <div class="grid blackbackground reverse paddingtopnavbar" id="section1">
 
         <div class="col-33">
             <div class="black iconecontainer">
@@ -121,18 +114,16 @@
         </div>
         <div class="col-66">
             <h1 class="yellowgreentext">SOFT SKILL </h1> <br>
-            <p class="whitetext" id="corpotext"> Sono un tipo scrupoloso a cui piace sperimentare e scoprire cose nuove.
-                Flessibile e tecnologico. Disponibile e diplomatico. Appassionato studente di metodologie Agile. Nativo digitale.
+            <p class="whitetext" id="corpotext"> Sono un tipo scrupoloso a cui piace sperimentare e scoprire cose nuove. Flessibile e tecnologico. Disponibile e diplomatico. Appassionato studente di metodologie Agile. Nativo digitale.
             </p>
         </div>
     </div>
 
-    <div class="grid whitebackground" id="hardskill">
+    <div class="grid whitebackground paddingtopnavbar" id="section2">
         <div class="col-66">
             <h1>HARD SKILL </h1> <br>
-            <p class="blacktext" id="corpotext">Ho acquisito le mie hard skill grazie allo studio costante e la
-                partecipazione ad alcuni corsi che hanno rappresentato un importante momento formativo: <br>
-                Start2Impact &nbsp// &nbspFrontend Developer by Tree &nbsp//&nbsp HTML, CSS, and Javascript by Johns Hopkins University.</p>
+            <p class="blacktext" id="corpotext">Ho acquisito le mie hard skill grazie allo studio costante e la partecipazione ad alcuni corsi che hanno rappresentato un importante momento formativo: <br> Start2Impact &nbsp// &nbspFrontend Developer by Tree &nbsp//&nbsp HTML, CSS, and Javascript
+                by Johns Hopkins University.</p>
         </div>
         <div class="col-33">
             <div class="whitebackground iconecontainer">
@@ -180,7 +171,7 @@
 
     </div>
 
-    <div class="grid reverse whitebackground" id="about">
+    <div class="grid reverse whitebackground paddingtopnavbar" id="section3">
         <div class="col-33">
             <img src="assets/img/abouteme.jpg" alt="profileimg" id="profileimg">
             <div class="overlay">
@@ -189,16 +180,13 @@
         </div>
         <div class="col-66">
             <h1>VITA E PASSIONI IN 5 RIGHE</h1> <br>
-            <p class="blacktext" id="corpotext"> Amo la bicicletta, la tecnologia, il buon cibo, il buon vino e la buona compagnia.
-                Nella vita ho collezionato la stessa quantità di successi e di insuccessi. Si può sempre migliorare.
-                Mi piace scrivere e condividere brevi riflessioni. Ma non su di me.
-                Provo gioia nel creare cose a mano e con la tastiera, per questo sento che il Frontend Development mi darà grandi soddisfazioni. <br>
-                Mi piace essere sintetico.
+            <p class="blacktext" id="corpotext"> Amo la bicicletta, la tecnologia, il buon cibo, il buon vino e la buona compagnia. Nella vita ho collezionato la stessa quantità di successi e di insuccessi. Si può sempre migliorare. Mi piace scrivere e condividere brevi riflessioni. Ma non
+                su di me. Provo gioia nel creare cose a mano e con la tastiera, per questo sento che il Frontend Development mi darà grandi soddisfazioni. <br> Mi piace essere sintetico.
             </p>
         </div>
     </div>
 
-    <div class="grid blackbackground" id="contatti">
+    <div class="grid blackbackground paddingtopnavbar" id="section4">
         <div class="col-form">
             <h1 class="whitetext">PARLIAMOCI</h1> <br>
             <p class="whitetext">
@@ -210,27 +198,28 @@
                     class="fas fa-phone-volume whitetext"></i> </a> </p>
         </div>
         <div class="containerform">
-            <form>
+            <form name="formmail" method="post" action="https://formspree.io/f/mrgjegdj">
+
                 <ul class="flex-outer">
                     <li>
                         <label for="first-name">Nome</label>
-                        <input type="text" id="first-name" placeholder="Inserisci il tuo nome qui">
+                        <input name="first-name" type="text" id="first-name" placeholder="Inserisci il tuo nome qui">
                     </li>
                     <li>
                         <label for="last-name">Cognome</label>
-                        <input type="text" id="last-name" placeholder="Inserisci il tuo conome qui">
+                        <input name="last-name" type="text" id="last-name" placeholder="Inserisci il tuo conome qui">
                     </li>
                     <li>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Inserisci la tua mail qui">
+                        <input name="email" type="email" id="email" placeholder="Inserisci la tua mail qui" required>
                     </li>
                     <li>
                         <label for="phone">Telefono</label>
-                        <input type="tel" id="phone" placeholder="Inserisci il tuo numero qui">
+                        <input name="phone" type="tel" id="phone" placeholder="Inserisci il tuo numero qui">
                     </li>
                     <li>
                         <label for="message">Messaggio</label>
-                        <textarea rows="6" id="message" placeholder="Inserisci il tuo messaggio qui"></textarea>
+                        <textarea name="message" rows="6" id="message" placeholder="Inserisci il tuo messaggio qui"></textarea>
                     </li>
                     <li>
                         <button id="submit">Submit</button>
@@ -242,39 +231,61 @@
 
     <a id="button" class="show"><i class="far fa-arrow-alt-circle-up" id="classiconbutton"></i></a>
     <script>
-        document.getElementById("submit").addEventListener("click", function(event){
+        document.getElementById("submit").addEventListener("click", function(event) {
             alert("Form non ancora attivo. Verrà attivato una volta completata la superguida Javascript :-)")
         });
-        </script>
-<script
-src="https://code.jquery.com/jquery-3.6.0.js"
-integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-crossorigin="anonymous"></script>
-        <script>    
-            jQuery(document).ready(function() {
-              
-              var btn = $('#button');
-            
-              $(window).scroll(function() {
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        jQuery(document).ready(function() {
+
+            var btn = $('#button');
+            var navigation = $('#firstnav');
+            var logos1 = $('#logoscroll1');
+            var logos2 = $('#logoscroll2');
+            var margintop = $('#home');
+
+            $(window).scroll(function() {
                 if ($(window).scrollTop() > 300) {
-                  btn.removeClass('show');
-                } else {
-                  btn.addClass('show');
+                    btn.removeClass('show');
                 }
-              });
-            
-              btn.on('click', function(e) {
-                e.preventDefault();
-                $('html, body').animate({scrollTop:0}, '300');
-              });
+                if ($(window).scrollTop() > 200) {
+                    navigation.removeClass('navbarfissa');
+                    navigation.addClass('navbar');
+                    logos1.addClass('logonone');
+                    logos2.addClass('logonone');
+                    margintop.addClass('height')
+                } else {
+                    btn.addClass('show');
+                    navigation.removeClass('navbar');
+                    navigation.addClass('navbarfissa');
+                    logos1.removeClass('logonone');
+                    logos2.removeClass('logonone');
+                    margintop.removeClass('height')
+                }
             });
-            </script>
-            <footer>
-                <div class="grid whitebackground" id="about">
-                    <p class="blacktext" id="footerfont">Questo sito è un work in progress come me. Se avete consigli o segnalazioni contattatemi via mail e non via form perchè al momento è disattivato.
-                        <br> © All rights are reserved Matteo Polo
-                    </p>
-                </div>
-                </footer>
+
+            btn.on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: 0
+                }, '300');
+            });
+        });
+    </script>
+    <script src="js/jquery.sticky-nav-1.1.0.min.js"></script>
+    <script>
+        $(function() {
+            $('nav').stickynav();
+        });
+    </script>
+    <footer>
+        <div class="grid whitebackground" id="about">
+            <p class="blacktext" id="footerfont">Questo sito è un work in progress come me.
+                <br> © All rights are reserved Matteo Polo
+            </p>
+        </div>
+    </footer>
 </body>
+
 </html>
