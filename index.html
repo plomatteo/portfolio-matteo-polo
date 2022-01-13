@@ -57,7 +57,7 @@
         </ul>
     </nav>
 
-    <div class="grid whitebackground" data-scroll href="home">
+    <div class="grid whitebackground" href="home" id="home">
         <div class="col-66">
 
             <h1>SONO MATTEO E CONOSCO &nbsp
@@ -242,10 +242,9 @@
             var margintop = $('#home');
 
             $(window).scroll(function() {
-                if ($(window).scrollTop() > 300) {
-                    btn.removeClass('show');
-                }
+
                 if ($(window).scrollTop() > 200) {
+                    btn.removeClass('show');
                     navigation.removeClass('navbarfissa');
                     navigation.addClass('navbar');
                     logos1.addClass('logonone');
